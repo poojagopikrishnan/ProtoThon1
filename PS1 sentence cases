@@ -2,12 +2,16 @@
 #include<string.h>
 int main()
 {
-char str[]="the QuiCK BRown FoX JumPS OvEr tHe LazY Dog";
+char str[]="the QuiCK BRown FoX JumPS OvEr tHe LazY Dog",strr[50];
 int i;
+strcpy(strr,str);
+
 printf("ALL CAPITAL\n");
 printf("%s",strupr(str));
-printf("\n\nALL SMALL\n");
-printf("%s",strlwr(str));
+
+printf("\n\nSMALL CAPS\n");
+printf("%s",strr);
+
 printf("\n\nTITLE CASE\n");
 for(i=0; str[i]!='\0'; i++)
 {
@@ -51,7 +55,7 @@ for(i=0; str[i]!='\0'; i++)
             str[i]=str[i]+32;
     }
 }
-printf("%s",str);
+printf("%s\n\n",str);
 return 0;
 
 }
