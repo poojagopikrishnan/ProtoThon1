@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+float num1, num2,res;
+int c;
+do
+{
+printf("\t\t\tCALCULATOR");
+printf("\n\n1.ADDITION");
+printf("\n2.SUBTRACTION");
+printf("\n3.MULTIPLICATION");
+printf("\n4.DIVISION");
+printf("\n\nEnter the numbers: ");
+scanf("%f %f",&num1,&num2);
+printf("\n\nEnter your choice: ");
+scanf("%d",&c);
+switch(c)
+{
+case 1: clrscr();
+        printf("ADDITION");
+        res=num1+num2;
+        printf("\nAnswer is %f\n\n",res);
+        break;
+case 2: clrscr();
+        printf("SUBTRACTION");
+        res=num1-num2;
+        printf("\nAnswer is %f\n\n",res);
+        break;
+case 3: clrscr();
+        printf("MULTIPLCATION");
+        res=num1*num2;
+        printf("\nAnswer is %f\n\n",res);
+        break;
+case 4: clrscr();
+        printf("DIVISION");
+        res=num1/num2;
+        printf("\nAnswer is %f\n\n",res);
+        break;
+default: printf("\nEnter a valid choice");
+}
+}
+while(c<=4);
+return 0;
+}
